@@ -1,0 +1,83 @@
+extends common/layout
+
+block content
+  main
+  section.dreamshare
+    .container
+      h2.dreamshare__title How Dreamshare works?
+      .dreamshare__wrapper
+        .dreamshare__wrapper__step1
+          button(type='button') STEP 1
+          h3 Sed leo enim, condimentum
+          p
+            | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit
+            | amet facilisis.
+        .dreamshare__wrapper__step2
+          button(type='button') STEP 2
+          h3 Morbi velit risus
+          p
+            | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+        .dreamshare__wrapper__step3
+          button(type='button') STEP 3
+          h3 Sed leo enim, condimentum
+          p
+            | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit
+            | amet facilisis.
+  section.partners
+    .container
+      h2.partners-title Meet a partner for your best holiday
+      .partners-wrapper
+        .partner-bredley
+          .avatar-bredley
+          .name-bredley Bradley Hunter
+          .about-bradley Based in Chicago. I love playing tennis and loud music.
+        .partner-marie
+          .avatar-marie
+          .name-marie Marie Bennett
+          .about-marie
+            | Currently living in Colorado. Lover of art, languages and
+            | travelling.
+        .partner-diana
+          .avatar-diana
+          .name-diana Diana Wells
+          .about-diana
+            | Living in Athens, Greece. I love black and white classics,
+            | chillout music and
+            | green tea.
+        .partner-chris
+          .avatar-chris
+          .name-chris Christopher Pierce
+          .about-chris
+            | Star Wars fanatic. I have a persistent enthusiasm to create new
+            | things.
+      button.partners-btn See other partners
+  section.activity
+    .container
+      h2.activity-title Discover holiday activity ideas
+      .ideas
+        .sport
+          h3.sport-title Sports and Activis
+        .wellness
+          h3.wellness-title Wellness and Health
+        .extreme
+          h3.extreme-title
+            | Extreme Sports
+            | and Expeditions
+        .games
+          h3.games-title Games
+        .culture
+          h3.culture-title Culture and Education
+        .enjomet
+          h3.enjomet-title Enjomet and Relaxation
+        .trevelling
+          h3.trevelling-title Trevelling
+  section.search
+    .container
+      h2.search-title Crate your holiday activity
+      .search-wrapper
+        .question Hi! What are your holiday interests?
+        form.search-form(action='#')
+          input.search-form__input(type='text', placeholder='Enter your insterests')
+          button.search-form__btn(type='button') Search partners
+
+

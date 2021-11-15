@@ -1,0 +1,76 @@
+@mixin btn ($w, $h, $b, $br){
+    width: $w;
+    height: $h;
+    border: $b;
+    border-radius: $br;
+    
+}
+
+@mixin dreamshare-block($w,$h) {
+    width: $w;
+    height: $h;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@mixin step-title ($w, $fw, $fs, $lh) {
+    width: $w;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    
+}
+
+
+@mixin step-text ($w, $fw, $fs, $lh) {
+    width: $w;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: #E3E3E3;
+    display: flex;
+    align-items: flex-end;
+}
+
+@mixin partner($w, $h,) {
+    width: $w;
+    height: $h;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin avatar-idea($w, $h, $br, $bs) {
+    width: $w;
+    height: $h;
+    background-repeat: $br;
+    background-size: $bs;
+}
+
+@mixin about($h) { 
+    height: $h;
+    font: {
+        family: 'Roboto',
+        sans-serif;
+        weight: 300;
+        size: 14px;
+    }
+line-height: 14px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+color: #666666; 
+}
+
+@mixin ideas-title {
+    font: {
+        family: 'Montserrat',
+        sans-serif;
+        weight: 700;
+        size: 22px;
+    }
+    line-height: 27px;
+    text-align: center;
+    color: $white;
+    
+}

@@ -1,0 +1,1639 @@
+@import './base/reset';
+@import './base/fonts';
+@import './base/variables';
+@import './base/mixin';
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.header{
+    height: 700px;
+    background-image: url('/images/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    &__logo{
+        font: {
+            family: 'Montserrat', sans-serif;
+            weight:700;
+            size: 20px;
+        }
+        line-height: 24px;
+        color: $white;
+        text-decoration: none;
+        margin-top: 6px;
+    } 
+    &__buttons{
+        &__login{
+            font: {
+                family: 'Montserrat', sans-serif;
+                weight: 400;
+                size: 14px;
+            }
+            line-height: 17px;
+            color: $white;
+            background: none;
+            border:none;
+        }
+        &__signup{
+            @include btn(90px, 36px, 2px solid $white, 40px);
+            box-sizing: border-box;
+            background: none;
+            margin-left: 19px;
+            font: {
+                family: 'Montserrat', sans-serif;
+                weight: 400;
+                size: 14px;
+            }
+            line-height: 17px;
+            color: $white;
+        }
+    }
+}
+
+.header-discr {
+    width: 470px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 147px;
+    .title {
+        font: {
+            family: 'Montserrat', sans-serif;
+            weight: 700;
+            size: 52px;
+        }
+        line-height: 63px;
+        color: $white;
+    }
+    .text {
+        font: {
+            family: 'Roboto', sans-serif;
+            weight: 300;
+            size: 24px;
+        }
+        line-height: 24px;
+        text-align: center;
+        color: #F7F3F2;
+        margin-top: 28px;
+    }
+    .header-button{
+        @include btn(225px, 40px, none, 40px);
+        background: $bg-btn;
+        font: {
+            family: 'Montserrat', sans-serif;
+            weight: 700;
+            size: 14px;
+        }
+        line-height: 17px;
+        color: $white;
+        margin-top: 36px;
+    }
+}
+
+.dreamshare{
+    padding-top: 89px;
+    &__title{
+        font: {
+            family: 'Montserrat', sans-serif;
+            weight: bold;
+            size: 26px;
+        }
+        line-height: 32px;
+        color: #444444;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 35px;
+        &__step1{
+            box-sizing: border-box;
+            padding-bottom: 21px;
+            padding-left: 25px;
+            @include dreamshare-block(300px,400px);
+            background: {
+                image: url('/images/Step1.png');
+                repeat: no-repeat;
+                size: 100%;
+            }
+            button{
+                @include btn(70px, 20px, none, 40px);
+                background: $bg-btn;
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    weight: 400;
+                    size: 10px;
+                }
+
+                line-height: 12px;
+                letter-spacing: 2px;
+                color: $white;
+            }
+            h3{
+               @include step-title(250px, 700, 24px, 26px);
+               font-family: 'Montserrat',sans-serif;
+                margin-top: 22px;
+                height: 58px;
+                color: $white;
+            }
+            p{
+                @include step-text(250px, 300, 14px, 14px);
+                font-family: 'Roboto', sans-serif;
+                margin-top: 18px;
+            }
+        }
+        &__step2{
+            box-sizing: border-box;
+            padding-bottom: 21px;
+            padding-left: 25px;
+            @include dreamshare-block (300px, 400px);
+            background: {
+                image: url('/images/Step2.png');
+                repeat: no-repeat;
+                size: 100%;
+            }
+            button{
+                @include btn(70px, 20px, none, 40px);
+                background: $bg-btn;
+                font: {
+                    family: 'Montserrat',
+                        sans-serif;
+                    weight: 400;
+                    size: 10px;
+                }
+
+                line-height: 12px;
+                letter-spacing: 2px;
+                color: $white;
+            }
+            h3{
+                @include step-title(250px, 700, 24px, 26px);
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 24px;
+                height: 29px;
+                color: $white;
+            }
+            p{
+                @include step-text(250px, 300, 14px, 14px);
+                font-family: 'Roboto', sans-serif;
+                padding-top: 14px;
+            }
+        }
+        &__step3 {
+            box-sizing: border-box;
+            padding-bottom: 21px;
+            padding-left: 25px;
+            @include dreamshare-block (300px, 400px);
+            background: {
+                image: url('/images/Step3.png');
+                repeat: no-repeat;
+                size: 100%;
+            }
+            button {
+                @include btn(70px, 20px, none, 40px);
+                background: $bg-btn;
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    weight: 400;
+                    size: 10px;
+                }
+                line-height: 12px;
+                letter-spacing: 2px;
+                color: $white;
+            }
+            h3 {
+                @include step-title(250px, 700, 24px, 26px);
+                font-family: 'Montserrat', sans-serif;
+                margin-top: 22px;
+                height: 58px;
+                color: $white;
+            }
+
+            p {
+                @include step-text(250px, 300, 14px, 14px);
+                font-family: 'Roboto', sans-serif;
+                margin-top: 18px;
+            }
+        }
+    }
+}
+
+.partners{
+    padding-top: 89px;
+    .partners-title{
+        @extend .dreamshare__title;
+    }
+    .partners-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 35px;
+        .partner-bredley{
+            @include partner(221px, 205px);
+            .avatar-bredley{
+                background-image: url('/images/Avatar1.png');
+                @include avatar-idea(120px, 120px, no-repeat, cover);
+                margin: 0 auto;
+            }
+            .name-bredley{
+                font: {
+                    family: 'Montserrat',
+                    sans-serif;
+                    weight: 700;
+                    size: 14px;
+                }
+                line-height: 17px;
+                text-align: center;
+                color: #444444;
+                margin-top: 21px;
+            }
+            .about-bradley{
+                @include about(38px);
+                margin-top: 12px;
+
+            }
+        }
+        .partner-marie{
+            @include partner(221px, 205px);
+            .avatar-marie{
+                background-image: url('/images/Avatar2.png');
+                @include avatar-idea(120px, 120px, no-repeat, cover);
+                margin: 0 auto;
+            }
+            .name-marie{
+                font: {
+                    family: 'Montserrat',
+                    sans-serif;
+                    weight: 700;
+                    size: 14px;
+                }
+
+                line-height: 17px;
+                text-align: center;
+                color: #444444;
+                margin-top: 21px;
+            }
+            .about-marie{
+                @include about(38px);
+                margin-top: 12px;
+            }
+        }
+        .partner-diana{
+            @include partner(221px, 224px);
+            .avatar-diana{
+                background-image: url('/images/Avatar3.png');
+                @include avatar-idea(120px, 120px, no-repeat, cover);
+                margin: 0 auto;
+            }
+            .name-diana{
+                font: {
+                    family: 'Montserrat',
+                    sans-serif;
+                    weight: 700;
+                    size: 14px;
+                }
+
+                line-height: 17px;
+                text-align: center;
+                color: #444444;
+                margin-top: 21px;
+            }
+            .about-diana{
+                @include about(57px);
+                margin-top: 12px;
+            }
+        }
+        .partner-chris{
+            @include partner(220px, 224px);
+            .avatar-chris{
+                background-image: url('/images/Avatar4.png');
+                @include avatar-idea(120px, 120px, no-repeat, cover);
+                margin: 0 auto;
+            }
+            .name-chris{
+                font: {
+                    family: 'Montserrat',
+                    sans-serif;
+                    weight: 700;
+                    size: 14px;
+                }
+
+                line-height: 17px;
+                text-align: center;
+                color: #444444;
+                margin-top: 21px;
+            }
+            .about-chris{
+                @include about(57px);
+                margin-top: 12px;
+            }
+        }
+    }
+    .partners-btn{
+        display: block;
+        @include btn(180px, 40px, 2px solid #FF4E50, 40px);
+        background: none;
+        color: $bg-btn;
+        margin: 0 auto;
+        font: {
+            family: 'Montserrat',
+            sans-serif;
+            weight: 700;
+            size: 14px;
+        }
+        line-height: 17px;
+        margin-top: 36px;
+    }
+}
+.activity{
+    padding-top: 95px;
+    .activity-title{
+       @extend .dreamshare__title;
+    }
+    .ideas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 35px;
+        .sport{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/sports.png');
+            @include avatar-idea(300px, 310px, no-repeat, cover);
+            .sport-title{
+                @include ideas-title;
+            }
+        }
+        .wellness{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/heath.png');
+            @include avatar-idea(300px, 310px, no-repeat, cover);
+            .wellness-title{
+                @include ideas-title;
+            }
+        }
+        .extreme{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/extreme.png');
+            @include avatar-idea(300px, 310px, no-repeat, cover);
+            .extreme-title{
+                @include ideas-title;
+            }
+        }
+        .games{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/games.png');
+            @include avatar-idea(300px, 310px, no-repeat, cover);
+            margin-top: 20px;
+            .games-title{
+                @include ideas-title;
+            }
+        }
+        .culture{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/culture.png');
+            @include avatar-idea(620px, 310px, no-repeat, cover);
+            margin-top: 20px;
+            .culture-title{
+                @include ideas-title;
+            }
+        }
+        .enjomet{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/relax.png');
+            @include avatar-idea(620px, 310px, no-repeat, cover);
+            margin-top: 20px;
+            .enjomet-title{
+                @include ideas-title;
+            }
+        }
+        .trevelling{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            background-image: url('/images/trevelling.png');
+            @include avatar-idea(300px, 310px, no-repeat, cover);
+            margin-top: 20px;
+            .trevelling-title{
+                @include ideas-title;
+            }
+        }
+    }
+}
+
+.search{
+    padding-top: 95px;
+    padding-bottom: 7px;
+    .search-title{
+        @extend .dreamshare__title;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        margin-top: 52px;
+        .question{
+            font: {
+                family: 'Roboto', sans-serif;
+                weight: 300;
+                size: 18px;
+            }
+            line-height: 14px;
+            text-align: center;
+            color: #666666;
+        }
+        .search-form{
+            margin-top: 25px;
+            &__input{
+                width: 299px;
+                height: 40px;
+                background: #FFFFFF;
+                border: 1px solid #D4D4D4;
+                box-sizing: border-box;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+                border-radius: 3px;
+            }
+            &__input::placeholder{
+                font: {
+                    family: 'Roboto',
+                    sans-serif;
+                    weight: 300;
+                    size: 14px;
+                }
+                line-height: 16px;
+                color: #999999;
+                padding-left: 15px;
+            }
+            &__btn{
+                @include btn(172px, 40px, none, 40px);
+                background: $bg-btn;
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    weight: 700;
+                    size: 14px;
+                }
+                line-height: 17px;
+                color: $white;
+            }
+        }
+    }
+
+}
+
+.footer{
+    margin-top: 100px;
+    height: 224px;
+    padding-bottom: 36px;
+    &-line{
+        height: 2px;
+        background: #FF4E50;
+    }
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+        .left-bloc{
+            width: 540px;
+            display: flex;
+            justify-content: space-between;
+            .footer-logo{
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    weight: 400;
+                    size: 16px;
+                }
+                line-height: 20px;
+                color: $bg-btn;
+            }
+            .footer-company{
+                &__title {
+                    font: {
+                        family: 'Montserrat', sans-serif;
+                        weight: 700;
+                        size: 14px;
+                    }
+                    line-height: 17px;
+                    color: #444444;
+                    margin-bottom: 11px;
+                }
+                &__items{
+                    &__item {
+                        font: {
+                            family: 'Roboto', sans-serif;
+                            weight: 300;
+                            size: 14px;
+                        }
+
+                        line-height: 26px;
+                        color: #999999;
+                    }
+                }
+               
+            }
+            .footer-partners{
+                &__title{
+                    @extend .footer-company__title;
+                }
+            }
+        }
+        .right-bloc{
+            display: flex;
+            flex-direction: column;
+            p{
+                font: {
+                    family: 'Montserrat', sans-serif;
+                    weight: 700;
+                    size: 10px;
+                }
+                line-height: 12px;
+                display: flex;
+                justify-content: flex-end;
+                letter-spacing: 1px;
+                color: #CCCCCC;
+            }
+            .footer-img{
+                width: 110px;
+                height: 24px;
+                background: {
+                    image: url('/images/Bitmap.png');
+                    repeat: no-repeat;
+                    size: cover;
+                }
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1441px) {
+    .container{
+        width: 1320px;
+    }
+    .header{
+        height: 1000px;
+        padding-top: 100px;
+    }
+    .nav {
+        &__logo {
+            font-size: 40px;
+        }
+
+        &__buttons {
+            &__login {
+                font-size: 30px;
+            }
+
+            &__signup {
+                @include btn(200px, 60px, 2px solid $white, 40px);
+                font-size: 30px;
+            }
+        }
+    }
+    .header-discr {
+        width: 100%;
+
+        .title {
+            font-size: 70px;
+        }
+
+        .text {
+            font-size: 35px;
+            line-height: 30px;
+            margin-top: 50px;
+        }
+
+        .header-button {
+            @include btn(400px, 80px, none, 40px);
+            font-size: 25px;
+            line-height: 30px;
+            margin-top: 60px;
+        }
+    }
+    .dreamshare {
+        padding-top: 100px;
+
+        &__title {
+            font-size: 50px;
+            line-height: 50px;
+        }
+
+        &__wrapper {
+            margin-top: 70px;
+
+            &__step1 {
+                @include dreamshare-block(400px, 500px);
+
+                button {
+                    @include btn(100px, 30px, none, 40px);
+                    font-size: 15px;
+                }
+
+                h3 {
+                    @include step-title(250px, 700, 30px, 26px);
+                }
+
+                p {
+                    @include step-text(250px, 300, 20px, 20px);
+                }
+            }
+
+            &__step2 {
+                @include dreamshare-block(400px, 500px);
+
+                button {
+                    @include btn(100px, 30px, none, 40px);
+                    font-size: 15px;
+                }
+
+                h3 {
+                    @include step-title(250px, 700, 30px, 26px);
+                }
+
+                p {
+                    @include step-text(250px, 300, 20px, 20px);
+                }
+            }
+
+            &__step3 {
+                @include dreamshare-block(400px, 500px);
+
+                button {
+                    @include btn(100px, 30px, none, 40px);
+                    font-size: 15px;
+                }
+
+                h3 {
+                    @include step-title(250px, 700, 30px, 26px);
+                }
+
+                p {
+                    @include step-text(250px, 300, 20px, 20px);
+                }
+            }
+        }
+    }
+    .partners {
+        padding-top: 100px;
+
+        .partners-wrapper {
+            margin-top: 55px;
+
+            .partner-bredley {
+                @include partner(320px, 270px);
+
+                .avatar-bredley {
+                    @include avatar-idea(150px, 150px, no-repeat, cover);
+                }
+
+                .name-bredley {
+                    font-size: 20px;
+                }
+
+                .about-bradley {
+                    @include about(38px);
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+
+            .partner-marie {
+                @include partner(320px, 270px);
+
+                .avatar-marie {
+                    @include avatar-idea(150px, 150px, no-repeat, cover);
+                }
+
+                .name-marie {
+                    font-size: 20px;
+                }
+
+                .about-marie {
+                    @include about(38px);
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+
+            .partner-diana {
+               @include partner(320px, 270px);
+
+                .avatar-diana {
+                    @include avatar-idea(150px, 150px, no-repeat, cover);
+                }
+
+                .name-diana {
+                    font-size: 20px;
+                }
+
+                .about-diana {
+                    @include about(57px);
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+
+            .partner-chris {
+               @include partner(320px, 270px);
+
+                .avatar-chris {
+                    @include avatar-idea(150px, 150px, no-repeat, cover);
+                }
+
+                .name-chris {
+                    font-size: 20px;
+                }
+
+                .about-chris {
+                    @include about(57px);
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .partners-btn {
+            @include btn(300px, 50px, 2px solid #FF4E50, 40px);
+
+            font-size: 20px;
+        }
+    }
+    .activity{
+        padding-top: 100px;
+        .ideas{
+            margin-top: 50px;
+            .sport{
+                width: 420px;
+                height: 410px;
+            }
+            .wellness{
+                width: 420px;
+                height: 410px;
+            }
+            .extreme{
+                width: 420px;
+                height: 410px;
+            }
+            .games{
+                width: 420px;
+                height: 410px;
+                margin-top: 20px;
+                
+            }
+            .culture{
+                width: 870px;
+                height: 410px;
+            }
+            .enjomet{
+               width: 870px;
+               height: 410px;
+            }
+            .trevelling{
+                width: 420px;
+                height: 410px;
+            }
+        }
+    }
+    .search {
+        padding-top: 100px;
+        padding-bottom: 30px;
+
+        &-wrapper {
+            .question {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            .search-form {
+                margin-top: 30px;
+
+                &__input {
+                    width: 350px;
+                    height: 50px;
+                    font-size: 20px;
+                }
+
+                &__input::placeholder {
+                    font-size: 20px;
+                }
+
+                &__btn {
+                    @include btn(200px, 50px, none, 40px);
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 36px;
+
+        &-line {
+            height: 2px;
+            background: #FF4E50;
+        }
+
+        &-wrapper {
+            margin-top: 50px;
+
+            .left-bloc {
+                width: 700px;
+
+                .footer-logo {
+                    font-size: 25px;
+                }
+
+                .footer-company {
+                    &__title {
+                        font-size: 20px;
+                    }
+
+                    &__items {
+                        &__item {
+                            font-size: 20px;
+                            
+                        }
+                    }
+
+                }
+            }
+            .right-bloc {
+                p {
+                    font-size: 15px;
+                }
+
+                .footer-img {
+                    width: 185px;
+                    height: 40px;
+
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .container{
+        width: 940px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 960px) {
+    .container{
+        width: 748px;
+    }
+    .header{
+        height: 700px;
+        background-position: center center;
+        .header-discr {
+            .header-button {
+                margin-top: 33px;
+            }
+        }
+    }
+    
+    .dreamshare{
+        padding-top: 95px;
+        &__title{
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__wrapper{
+            &__step1{
+                padding-bottom: 16px;
+                padding-left: 20px;
+                @include dreamshare-block(236px, 400px);
+                background-size: cover;
+                h3{
+                    @include step-title(196px, 700, 24px, 24px);
+                    margin-top: 18px;
+                }
+                p{
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 76px;
+                    @include step-text(196px, 300, 14px, 14px);
+                    margin-top: 10px;
+                }
+            }
+            &__step2 {
+                padding-bottom: 16px;
+                padding-left: 20px;
+                @include dreamshare-block(236px, 400px);
+                background-size: cover;
+                h3 {
+                    @include step-title(196px, 700, 24px, 24px);
+                    margin-top: 14px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(196px, 300, 14px, 14px);
+                    margin-top: 9px;
+                }
+            }
+            &__step3 {
+                padding-bottom: 16px;
+                padding-left: 20px;
+                @include dreamshare-block(236px, 400px);
+                background-size: cover;
+                h3 {
+                    @include step-title(196px, 700, 24px, 24px);
+                    margin-top: 18px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 76px;
+                    @include step-text(196px, 300, 14px, 14px);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .partners{
+        height: 605px;
+        .partners-wrapper{
+            width: 492px;
+            margin: 0 auto;
+            margin-top: 35px;
+            .partner-bredley{
+                @include partner(236px, 205px);
+                order: 1;
+                .name-bredley{
+                    margin-top: 17px;
+                }
+            }
+            .partner-marie {
+                @include partner(236px, 205px);
+                order: 3;
+                margin-top: 35px;
+                .name-marie {
+                    margin-top: 17px;
+                }
+            }
+            .partner-diana {
+                @include partner(236px, 224px);
+                order: 2;
+                .name-diana {
+                    margin-top: 17px;
+                }
+            }
+            .partner-chris {
+                @include partner(236px, 205px);
+                order: 4;
+                margin-top: 35px;
+                .name-chris {
+                    margin-top: 17px;
+                }
+                .about-chris{
+                    height: 39px;
+                }
+            } 
+        }
+        .partners-btn{
+            margin-top: 40px;
+        } 
+    }
+    .activity{
+        width: auto;
+        .ideas{
+            .sport{
+                @include avatar-idea(236px, 310px, no-repeat, cover);
+            }
+            .wellness {
+                @include avatar-idea(236px, 310px, no-repeat, cover);
+            }
+            .extreme {
+                @include avatar-idea(236px, 310px, no-repeat, cover);
+            }
+            .games {
+                @include avatar-idea(236px, 310px, no-repeat, cover);
+            }
+            .culture {
+                @include avatar-idea(492px, 310px, no-repeat, cover);
+            }
+            .enjomet {
+                @include avatar-idea(492px, 310px, no-repeat, cover);
+            }
+            .trevelling {
+                @include avatar-idea(236px, 310px, no-repeat, cover);
+            }
+        }
+    }
+    .search{
+        &-wrapper{
+            margin-top: 43px;
+        }
+    }
+    .footer{
+        padding-bottom: 20px;
+        &-wrapper{
+            margin: 0 auto;
+            margin-top: 38px;
+
+            .left-bloc{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .header {
+        width: 100%;
+        height: 540px;
+        background-position: center center;
+        background-size: cover;
+        .nav{
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            height: 157px;
+            margin: 0 auto;
+            &__logo{
+                text-align: center;
+                order: 2;
+                margin: 0;
+            }
+            &__buttons{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                &__login{
+                    padding: 0;
+                }
+                &__signup{
+                    padding: 0;
+                }
+            }
+        }
+        .header-discr {
+            margin-top: 27px;
+            .title{
+                font-size: 30px;
+                line-height: 37px;
+            }
+            .text{
+                font-size: 18px;
+                margin-top: 5px;
+            }
+            .header-button {
+                @include btn(280px, 40px, none, 40px);
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .dreamshare {
+        padding-top: 35px;
+
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        &__wrapper {
+                justify-content: center;
+                align-items: center;
+            &__step1 {
+                @include dreamshare-block(450px, 400px);
+                background-size: cover;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                h3 {
+                    @include step-title(250px, 700, 24px, 24px);
+                    margin-top: 18px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(250px, 300, 14px, 14px);
+                    margin-top: 10px;
+                }
+            }
+
+            &__step2 {
+                @include dreamshare-block(450px, 400px);
+                background-size: cover;
+                background-position: 0;
+                border-radius: 10px;
+                margin-bottom: 10px;
+                h3 {
+                    @include step-title(250px, 700, 24px, 24px);
+                    margin-top: 17px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(250px, 300, 14px, 14px);
+                    margin-top: 9px;
+                }
+            }
+
+            &__step3 {
+               @include dreamshare-block(450px, 400px);
+               background-size: cover;
+               background-position: 0;
+               border-radius: 10px;
+                h3 {
+                    @include step-title(250px, 700, 24px, 24px);
+                    margin-top: 18px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(250px, 300, 14px, 14px);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        .partners-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 30px;
+            .partner-diana{
+               margin-top: 35px;
+            }
+            .partner-chris{
+                margin-top: 35px;
+            }
+        }
+
+    }
+
+    .activity {
+        width: auto;
+        padding-top: 35px;
+        .ideas {
+            margin-top: 33px;
+            justify-content: center;
+            align-items: center;
+            .sport {
+                @include avatar-idea(450px, 220px, no-repeat, cover);
+                background-position: 50% 50%;
+            }
+
+            .wellness {
+               @include avatar-idea(450px, 220px, no-repeat, cover);
+                background-position: 50% 50%;
+                margin-top: 10px;
+            }
+
+            .extreme {
+               @include avatar-idea(450px, 220px, no-repeat, cover);
+                background-position: 50% 40%;
+                margin-top: 10px;
+            }
+
+            .games {
+                @include avatar-idea(450px, 220px, no-repeat, cover);
+                background-position: 50% 50%;
+                margin-top: 10px;
+            }
+
+            .culture {
+                @include avatar-idea(450px, 220px, no-repeat, cover);
+                margin-top: 10px;
+            }
+
+            .enjomet {
+                @include avatar-idea(450px, 220px, no-repeat, cover);
+                margin-top: 10px;
+            }
+
+            .trevelling {
+                @include avatar-idea(450px, 220px, no-repeat, cover);
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .search {
+        &-wrapper {
+            margin-top: 9px;
+            .search-form{
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                &__input{
+                    width: 280px;
+                }
+                &__btn{
+                    @include btn(280px, 40px, none, 40px);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 226px;
+        padding-top: 40px;
+        padding-bottom: 22px;
+
+        &-wrapper {
+            width: 280px;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 19px;
+
+            .left-bloc {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:center;
+                width: 280px;
+                margin: 0 auto;
+                .footer-company{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items:center;
+                    margin-top: 13px;
+                    &__items{
+                        width: 200px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        align-items: center;
+                        &__item{
+                            text-align: center;
+                        }
+                    }
+                }
+                .footer-partners{
+                    margin-top: 6px;
+                }
+            }
+            .right-bloc{
+                width: 280px;
+                margin-top: 14px;
+                align-items: center;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        width: 300px;
+    }
+
+    .header {
+        width: 100%;
+        height: 540px;
+        background-position: center center;
+        background-size: cover;
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            height: 157px;
+            margin: 0 auto;
+
+            &__logo {
+                text-align: center;
+                order: 2;
+                margin: 0;
+            }
+
+            &__buttons {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &__login {
+                    padding: 0;
+                }
+
+                &__signup {
+                    padding: 0;
+                }
+            }
+        }
+
+        .header-discr {
+            width: 100%;
+            margin-top: 27px;
+
+            .title {
+                font-size: 30px;
+                line-height: 37px;
+            }
+
+            .text {
+                font-size: 18px;
+                margin-top: 5px;
+            }
+
+            .header-button {
+                @include btn(280px, 40px, none, 40px);
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .dreamshare {
+        padding-top: 35px;
+
+        &__title {
+            font-size: 22px;
+            line-height: 27px;
+        }
+
+        &__wrapper {
+            justify-content: center;
+            align-items: center;
+
+            &__step1 {
+                @include dreamshare-block(300px, 240px);
+                background-size: cover;
+                margin-bottom: 10px;
+
+                h3 {
+                    @include step-title(250px, 700, 24px, 14px);
+                    margin-top: 18px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(250px, 300, 14px, 14px);
+                    margin-top: 10px;
+                }
+            }
+
+            &__step2 {
+                @include dreamshare-block(300px, 240px);
+                background-size: cover;
+                background-position: 0;
+                margin-bottom: 10px;
+
+                h3 {
+                    @include step-title(250px, 700, 24px, 14px);
+                    margin-top: 17px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(250px, 300, 14px, 14px);
+                    margin-top: 9px;
+                }
+            }
+
+            &__step3 {
+                @include dreamshare-block(300px, 240px);
+                background-size: cover;
+                background-position: 0;
+
+                h3 {
+                    @include step-title(250px, 700, 24px, 14px);
+                    margin-top: 18px;
+                }
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    height: 57px;
+                    @include step-text(250px, 300, 14px, 14px);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .partners {
+        padding-top: 36px;
+        .partners-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 14px;
+            justify-content: center;
+
+            .partner-bredley {
+                @include partner(236px, 205px);
+                order: 1;
+                .name-bredley {
+                    margin-top: 17px;
+                }
+                .about-bradley{
+                    margin-top: 10px;
+                }
+            }
+
+            .partner-marie {
+                @include partner(236px, 205px);
+                order: 3;
+                margin-top: 16px;
+                .name-marie {
+                    margin-top: 17px;
+                }
+                .about-marie{
+                    margin-top: 10px;
+                }
+            }
+
+            .partner-diana {
+                @include partner(236px, 224px);
+                order: 2;
+                margin-top: 16px;
+                .name-diana {
+                    margin-top: 17px;
+                }
+                .about-diana{
+                    margin-top: 10px;
+                }
+            }
+
+            .partner-chris {
+                @include partner(236px, 205px);
+                order: 4;
+                margin-top: 16px;
+                .name-chris {
+                    margin-top: 17px;
+                }
+
+                .about-chris {
+                    height: 39px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .partners-btn {
+            margin-top: 40px;
+        }
+    }
+
+    .activity {
+        width: auto;
+        padding-top: 35px;
+
+        .ideas {
+            margin-top: 33px;
+            justify-content: center;
+            align-items: center;
+
+            .sport {
+                @include avatar-idea(300px, 120px, no-repeat, cover);
+                background-position: 50% 50%;
+            }
+
+            .wellness {
+                @include avatar-idea(300px, 120px, no-repeat, cover);
+                background-position: 50% 50%;
+                margin-top: 10px;
+            }
+
+            .extreme {
+               @include avatar-idea(300px, 120px, no-repeat, cover);
+                background-position: 50% 40%;
+                margin-top: 10px;
+            }
+
+            .games {
+               @include avatar-idea(300px, 120px, no-repeat, cover);
+                background-position: 50% 50%;
+                margin-top: 10px;
+            }
+
+            .culture {
+               @include avatar-idea(300px, 120px, no-repeat, cover);
+                margin-top: 10px;
+            }
+
+            .enjomet {
+               @include avatar-idea(300px, 120px, no-repeat, cover);
+                margin-top: 10px;
+            }
+
+            .trevelling {
+                @include avatar-idea(300px, 120px, no-repeat, cover);
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .search {
+        padding-top: 35px;
+        &-wrapper {
+            margin-top: 9px;
+
+            .search-form {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+
+                &__input {
+                    width: 280px;
+                }
+
+                &__btn {
+                    @include btn(280px, 40px, none, 40px);
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 226px;
+        margin-top: 40px;
+        padding-bottom: 22px;
+
+        &-wrapper {
+            width: 280px;
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 19px;
+
+            .left-bloc {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 280px;
+                margin: 0 auto;
+
+                .footer-company {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 13px;
+
+                    &__items {
+                        width: 200px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        &__item {
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .footer-partners {
+                    margin-top: 6px;
+                }
+            }
+
+            .right-bloc {
+                width: 280px;
+                margin-top: 14px;
+                align-items: center;
+            }
+
+        }
+    }
+}
